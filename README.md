@@ -1,5 +1,6 @@
 ## Hi there 👋
 我是
+![](https://count.getloli.com/get/@spurs6.github.readme)
 <!--
 **spurs6/spurs6** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
