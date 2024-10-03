@@ -1,0 +1,87 @@
+HTML元素的定义：
+包括开始标签，元素内容和结束标签
+开始标签是<>,结束标签是</>
+<html>,</html>定义了整个html文档
+<p>,</p>定义了一个段落
+<body>,</body>定义了主体内容
+<hr>用于添加下划线，从而得到分隔内容的效果
+<head>,</head>定义头部元素，包含一些元数据<meta charset="utf-8">
+                            即可变长度字符编码
+<br>用来换行的
+
+html的定义：
+HTML hyper text makeup language(超文本标记语言)
+是一门标记语言，而不是编程语言
+HTML文档又叫做web页面
+开头要用<!DOCTYPE html>来声明是HTML5文档
+
+
+文本格式化常用的元素：
+1.<bdo>,</bdo>用于覆盖默认的文本方向，因此在开始标签里必须加入一个属性
+<bdo dir="ltr"><bdo dir="rtl">定义文本方向是从左到右还是从右到左
+2.<abbr>,</abbr>用于表示单词的缩写
+<abbr title="hyper text makeup language">html</abbr>
+3.<code>,</code>用于定义计算机编码
+目的就是能够识别元素内容里的计算机编码
+4.<b>,</b>定义粗体文字
+5.<sup>,</sup>定义上标字
+6.<sub>,</sub>定义下标字
+7.<i>,</i>定义斜体字
+
+html链接的常见用法:
+1.基本构成：<a href="">+链接文本+</a>
+           注意：链接文本不一定是文本，也有可能图像是或其他元素
+2.当光标移动到链接文本时，会出现一只抓取的小手
+3.<a href=""><img src="" alt=""><a/>
+如果链接文本是图像，那么要在<a>元素里嵌套一个img元素
+
+今天的两个难点：
+1.alt的用法：创建img标签时使用，来作为图像的替代文本
+如果系统没有加载出相应的图片，那么会用alt作为图像的替代文本
+2.<br>和<br/>的辨析用法：
+其实两者的功能没有区别，都是在段落内换行，但不会创建一个新的段落，
+如果想创建一个新的段落，直接用元素<p>,系统会自动换行
+
+
+html样式：{样式常常放在头部元素里}
+1.分成外部样式表，内部样式表，内联样式表
+2.各个样式表的用法：
+  外部样式表：<link rel="stylesheet" type="text/css" href="testing.css">
+              link:资源的引入（引入外部样式表的关键字）
+              style:样式说明，stylesheet:外部样式表
+              type:引入文档的类型"text/css"或"text/js"
+              href:确定引入的具体文档，即文件名
+  内部样式表：<style type="text/css">
+                  <!--相当于先在头部元素里创建了一个编辑css的环境-->
+                  先用选择器说明，然后相关变量说明在大括号里运行
+                  常见的变量说明有：
+                  1.width:宽度
+                  2.height:高度
+                  3.background-color:背景颜色
+                  4.float:创建列的效果（但是使用后必须关闭，即用clear：both/left/right，防止出现元素覆盖效果）
+                  5.font-size:字体大小
+              </style>
+
+
+css选择器的作用：
+1.本质上就是选择HTML文档里的元素，并使用css样式的一种模式
+其作用是精确的找到HTML文档里的元素并进行css样式的修改
+无论是id选择器还是类选择器，都能与其他选择器混合使用
+例如：<div id="container">
+      #id{
+         background_color=blue
+      }
+      div#id{
+         background_color=red
+      }
+2.最常用的css选择器：
+  类选择器，类型选择器，id选择器
+  类选择器：.container
+  类型选择器：div,h1-h6,p+{}
+  id选择器：#container
+
+如何在vscode中修改文件名：
+1.在查看中找到资源管理器
+2.左侧文件会出现相应的变化，然后右击文件，会出现一个重命名操作
+3.点击重命名，重新命名即可
+
